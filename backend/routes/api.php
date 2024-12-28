@@ -14,6 +14,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::prefix('catalog')->group(function () {
+    Route::get('top', [\App\Http\Controllers\CatalogController::class, 'top']);
+    Route::get('{id}', [\App\Http\Controllers\CatalogController::class, 'info']);
+    Route::get('', [\App\Http\Controllers\CatalogController::class, 'index']);
+    Route::post('', [\App\Http\Controllers\CatalogController::class, 'create']);
+});
+
+Route::prefix('categories')->group(function () {
+    Route::get('', [\App\Http\Controllers\CategoryController::class, 'index']);
+    Route::get('{id}', [\App\Http\Controllers\CategoryController::class, 'info']);
+});
+
+Route::get('products', [\App\Http\Controllers\ProductController::class, 'index']);
+Route::get('products/top', [\App\Http\Controllers\ProductController::class, 'top']);
+Route::get('products/{id}', [\App\Http\Controllers\ProductController::class, 'info']);
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });

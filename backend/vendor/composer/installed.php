@@ -3,7 +3,7 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'e08c31facae8fe03a784af1b3bbe25090d57edc7',
+        'reference' => '236faaf1072d54b2c42133d1861f5c9a18761be4',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(
@@ -384,7 +384,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'e08c31facae8fe03a784af1b3bbe25090d57edc7',
+            'reference' => '236faaf1072d54b2c42133d1861f5c9a18761be4',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(
@@ -575,6 +575,15 @@
             'reference' => '5369ef84d8142c1d87e4ec278711d4ece3cbf301',
             'type' => 'library',
             'install_path' => __DIR__ . '/../nunomaduro/termwind',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'onecentlin/laravel-adminer' => array(
+            'pretty_version' => '7.0.0',
+            'version' => '7.0.0.0',
+            'reference' => 'e3f622c9e3960343bdbc8b33807c81504503b440',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../onecentlin/laravel-adminer',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
